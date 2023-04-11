@@ -139,7 +139,7 @@ const LoadModelPopup: React.FC<IProps> = ({ updateActivePopupType }) => {
 
     return (
         <GenericYesNoPopup
-            title={'Say hello to AI'}
+            title={'使用AI模型'}
             renderContent={renderContent}
             acceptLabel={'使用模型'}
             onAccept={onAccept}

@@ -188,16 +188,23 @@ const ImportLabelPopup: React.FC<IProps> = (
             </div>;
     };
 
+    let labelTypeName = {
+        rect: "矩形",
+        point: "点",
+        line: "线段",
+        polygon: "多边形",
+    };
+
     return (
         <GenericLabelTypePopup
             activeLabelType={labelType}
-            title={`Import ${labelType.toLowerCase()} annotations`}
+            title={`导入 ${labelTypeName[labelType.toLowerCase()]} 注释`}
             onLabelTypeChange={onLabelTypeChange}
-            acceptLabel={'Import'}
+            acceptLabel={'导入'}
             onAccept={onAccept}
             skipAcceptButton={ImportFormatData[labelType].length === 0}
             disableAcceptButton={loadedImageData.length === 0 || loadedLabelNames.length === 0 || !!annotationsLoadedError}
-            rejectLabel={'Cancel'}
+            rejectLabel={'取消'}
             onReject={onReject}
             renderInternalContent={renderInternalContent}
         />

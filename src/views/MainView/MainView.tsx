@@ -117,7 +117,7 @@ const MainView: React.FC = () => {
                     <div className='TriangleVerticalContent' />
                 </div>
                 {projectInProgress && <TextButton
-                    label={'Go Back'}
+                    label={'返回'}
                     onClick={endProject}
                 />}
             </div>

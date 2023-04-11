@@ -107,7 +107,7 @@ const LineLabelsList: React.FC<IProps> = (
         >
             {imageData.labelLines.length === 0 ?
                 <EmptyLabelList
-                    labelBefore={'draw your first line'}
+                    labelBefore={'绘制第一条线段'}
                     labelAfter={'no labels created for this image yet'}
                 /> :
                 <Scrollbars>

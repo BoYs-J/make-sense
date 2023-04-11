@@ -90,15 +90,22 @@ const ExportLabelPopup: React.FC<IProps> = ({ activeLabelType }) => {
         setExportFormatType(null);
     };
 
+    let labelTypeName = {
+        rect: "矩形",
+        point: "点",
+        line: "线段",
+        polygon: "多边形",
+    };
+
     return (
         <GenericLabelTypePopup
             activeLabelType={labelType}
-            title={`Export ${labelType.toLowerCase()} annotations`}
+            title={`导出 ${labelTypeName[labelType.toLowerCase()]} 注释`}
             onLabelTypeChange={onLabelTypeChange}
-            acceptLabel={'Export'}
+            acceptLabel={'导出'}
             onAccept={onAccept}
             disableAcceptButton={!exportFormatType}
-            rejectLabel={'Cancel'}
+            rejectLabel={'取消'}
             onReject={onReject}
             renderInternalContent={renderInternalContent}
         />

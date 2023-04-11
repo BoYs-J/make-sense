@@ -14,7 +14,7 @@ export const SocialMediaData: ISocialMedia[] = [
         imageSrc: '/ico/github-logo.png',
         imageAlt: 'GitHub',
         href: Settings.GITHUB_URL,
-        tooltipMessage: '点亮GitHub上的 ⭐',
+        tooltipMessage: '点亮GitHub的 ⭐',
     },
     {
         displayName: 'Medium',

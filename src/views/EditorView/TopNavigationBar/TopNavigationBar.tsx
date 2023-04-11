@@ -49,7 +49,7 @@ const TopNavigationBar: React.FC<IProps> = (props) => {
                             alt={'make-sense'}
                             src={'/make-sense-ico-transparent.png'}
                         />
-                        Make Sense
+                        主页
                     </div>
                 </div>
                 <div className='NavigationBarGroupWrapper'>
