@@ -107,7 +107,7 @@ const PolygonLabelsList: React.FC<IProps> = (
             {imageData.labelPolygons.length === 0 ?
                 <EmptyLabelList
                     labelBefore={'绘制第一个多边形'}
-                    labelAfter={'no labels created for this image yet'}
+                    labelAfter={'尚未为此图像创建标签'}
                 /> :
                 <Scrollbars>
                     <div

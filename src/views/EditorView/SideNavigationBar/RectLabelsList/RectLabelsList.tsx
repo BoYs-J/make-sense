@@ -113,7 +113,7 @@ const RectLabelsList: React.FC<IProps> = (
             {imageData.labelRects.filter((labelRect: LabelRect) => labelRect.status === LabelStatus.ACCEPTED).length === 0 ?
                 <EmptyLabelList
                     labelBefore={'绘制第一个矩形框'}
-                    labelAfter={'no labels created for this image yet'}
+                    labelAfter={'尚未为此图像创建标签'}
                 /> :
                 <Scrollbars>
                     <div

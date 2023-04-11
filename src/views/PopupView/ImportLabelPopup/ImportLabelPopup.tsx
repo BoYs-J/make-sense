@@ -139,9 +139,9 @@ const ImportLabelPopup: React.FC<IProps> = (
                     alt={'upload'}
                     src={'ico/box-opened.png'}
                 />
-                <p className='extraBold'>{`Drop ${formatType} annotations`}</p>
-                <p>or</p>
-                <p className='extraBold'>Click here to select them</p>
+                <p className='extraBold'>{`移除 ${formatType} 注释`}</p>
+                <p>或者</p>
+                <p className='extraBold'>单击此处进行选择</p>
             </>;
         }
     };

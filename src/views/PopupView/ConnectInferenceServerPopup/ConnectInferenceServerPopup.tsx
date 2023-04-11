@@ -184,10 +184,10 @@ const ConnectInferenceServerPopup: React.FC<IProps> = (
             title={InferenceServerDataMap[currentServerType].name}
             renderContent={renderContent}
             renderSideMenuContent={renderSideMenuContent}
-            acceptLabel={'Connect'}
+            acceptLabel={'连接'}
             onAccept={onAccept}
             disableAcceptButton={disableAcceptButton()}
-            rejectLabel={'Back'}
+            rejectLabel={'返回'}
             onReject={onReject}
         />
     );
