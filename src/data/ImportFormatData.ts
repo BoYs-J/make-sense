@@ -8,15 +8,15 @@ export const ImportFormatData: ImportFormatDataMap = {
     [LabelType.RECT]: [
         {
             type: AnnotationFormatType.COCO,
-            label: 'Single file in COCO JSON format.'
+            label: 'COCO JSON格式的单个文件'
         },
         {
             type: AnnotationFormatType.YOLO,
-            label: 'Multiple files in YOLO format along with labels names definition - labels.txt file.'
+            label: 'YOLO格式的多个文件以及标签名称定义 - labels.txt文件'
         },
         {
             type: AnnotationFormatType.VOC,
-            label: 'Multiple files in VOC XML format.'
+            label: 'VOC XML格式的多个文件'
         }
     ],
     [LabelType.POINT]: [],

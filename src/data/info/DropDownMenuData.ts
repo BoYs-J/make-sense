@@ -14,54 +14,54 @@ export type DropDownMenuNode = {
 
 export const DropDownMenuData: DropDownMenuNode[] = [
     {
-        name: 'Actions',
+        name: '行动',
         imageSrc: 'ico/actions.png',
         imageAlt: 'actions',
         disabled: false,
         children: [
             {
-                name: 'Edit Labels',
-                description: 'Modify labels list',
+                name: '编辑标签',
+                description: '修改标签',
                 imageSrc: 'ico/tags.png',
                 imageAlt: 'labels',
                 disabled: false,
                 onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.UPDATE_LABEL))
             },
             {
-                name: 'Import Images',
-                description: 'Load more images',
+                name: '导入图像',
+                description: '加载更多图像',
                 imageSrc: 'ico/camera.png',
                 imageAlt: 'images',
                 disabled: false,
                 onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.IMPORT_IMAGES))
             },
             {
-                name: 'Import Annotations',
-                description: 'Import annotations from file',
+                name: '导入注释',
+                description: '从文件导入注释',
                 imageSrc: 'ico/import-labels.png',
                 imageAlt: 'import-labels',
                 disabled: false,
                 onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.IMPORT_ANNOTATIONS))
             },
             {
-                name: 'Export Annotations',
-                description: 'Export annotations to file',
+                name: '导出注释',
+                description: '将注释导出到文件',
                 imageSrc: 'ico/export-labels.png',
                 imageAlt: 'export-labels',
                 disabled: false,
                 onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.EXPORT_ANNOTATIONS))
             },
             {
-                name: 'Run AI locally',
-                description: 'Run annotation model in browser',
+                name: '本地运行AI',
+                description: '在浏览器中运行注释模型',
                 imageSrc: 'ico/ai.png',
                 imageAlt: 'load-ai-model-in-browser',
                 disabled: false,
                 onClick: () => store.dispatch(updateActivePopupType(PopupWindowType.LOAD_AI_MODEL))
             },
             {
-                name: 'Connect AI server',
-                description: 'Run annotation model on server',
+                name: '连接AI服务器',
+                description: '在服务器上运行注释模型',
                 imageSrc: 'ico/api.png',
                 imageAlt: 'connect-ai-server',
                 disabled: false,
@@ -70,22 +70,22 @@ export const DropDownMenuData: DropDownMenuNode[] = [
         ]
     },
     {
-        name: 'Community',
+        name: '社区',
         imageSrc: 'ico/plant.png',
         imageAlt: 'community',
         disabled: false,
         children: [
             {
-                name: 'Documentation',
-                description: 'Read more about Make Sense',
+                name: '文档',
+                description: '阅读更多关于Make Sense的信息',
                 imageSrc: 'ico/documentation.png',
                 imageAlt: 'documentation',
                 disabled: false,
                 onClick: () => window.open('https://skalskip.github.io/make-sense', '_blank')
             },
             {
-                name: 'Bugs and Features',
-                description: 'Report a bug or propose a new feature',
+                name: 'Bug和功能',
+                description: '报告错误或提出新功能',
                 imageSrc: 'ico/bug.png',
                 imageAlt: 'bug',
                 disabled: false,

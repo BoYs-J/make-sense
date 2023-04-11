@@ -9,53 +9,43 @@ export type ExportFormatDataMap = Record<Notification, NotificationContent>;
 
 export const NotificationsDataMap: ExportFormatDataMap = {
     [Notification.EMPTY_LABEL_NAME_ERROR]: {
-        header: 'Empty label name',
-        description: "Looks like you didn't assign name to one of your labels. Unfortunately it is mandatory for " +
-            'every label to have unique name value. Insert correct name or delete empty label and try again.'
+        header: '空标签名称',
+        description: '看起来你没有为某个标签指定名称，每个标签都必须具有唯一的名称值。请插入正确的名称或删除空标签，然后重试。'
     },
     [Notification.NON_UNIQUE_LABEL_NAMES_ERROR]: {
-        header: 'Non unique label names',
-        description: 'Looks like not all your label names are unique. Unique names are necessary to guarantee correct' +
-            ' data export when you complete your work. Make your names unique and try again.'
+        header: '非唯一标签名称',
+        description: '看起来并不是所有的标签名称都是唯一的；唯一的名称是必要的，以确保在完成工作时正确导出数据。让你的名字独一无二，然后再试一次。'
     },
     [Notification.MODEL_DOWNLOAD_ERROR]: {
-        header: 'Model could not be downloaded',
-        description: 'Looks like we ware unable to download tensorflow.js model from external server. Make sure that ' +
-            'you are connected to internet and try again.'
+        header: '无法下载模型',
+        description: '看起来我们无法从外部服务器下载tensorflow.js模型。请确保你已连接到Internet，然后重试。'
     },
     [Notification.MODEL_INFERENCE_ERROR]: {
-        header: 'Inference failed',
-        description: 'Looks like we were unable to run inference of your image. Please help us improve Make Sense ' +
-            'and let us know.'
+        header: '推理失败',
+        description: '看起来无法对你的图像进行推断。请帮助我们改进Make Sense并让我们知道。'
     },
     [Notification.MODEL_LOAD_ERROR]: {
-        header: 'Model could not be loaded',
-        description: 'Looks like we ware unable to load your tensorflow.js model from uploaded files. Make sure that ' +
-            'you uploaded all model shard files. Please re-upload all model files once again.'
+        header: '无法加载模型',
+        description: '看起来无法从上传的文件中加载你的tensorflow.js模型。确保你上传了所有模型碎片文件。请再次重新上传所有模型文件。'
     },
     [Notification.LABELS_FILE_UPLOAD_ERROR]: {
-        header: 'Labels file was not uploaded',
-        description: 'Looks like you forgot to upload text file containing list of detected classes names. We need ' +
-            'it to map YOLOv5 model output to labels. Please re-upload all model files once again.'
+        header: '标签文件未上传',
+        description: '你似乎忘记上传包含检测到的类名列表的文本文件。我们需要它来将YOLOv5模型输出映射到标签。请再次重新上传所有模型文件。'
     },
     [Notification.ANNOTATION_FILE_PARSE_ERROR]: {
-        header: 'Annotation files could not be parsed',
-        description: 'The contents of an annotation file is not valid JSON, CSV, or XML. Please fix the files ' +
-            'selected to import and try again.',
+        header: '无法分析注释文件',
+        description: '注释文件的内容不是有效的JSON、CSV或XML。请修复选定要导入的文件，然后重试。',
     },
     [Notification.ANNOTATION_IMPORT_ASSERTION_ERROR]: {
-        header: 'Annotation files did not contain valid data',
-        description: 'Missing or invalid annotations provided during import. Please fix the files selected ' +
-            'to import and try again.',
+        header: '注释文件不包含有效数据',
+        description: '导入过程中提供的批注丢失或无效。请修复选定要导入的文件，然后重试。',
     },
     [Notification.UNSUPPORTED_INFERENCE_SERVER_MESSAGE]: {
-        header: 'Selected inference server is not yet supported',
-        description: 'Integration with selected inference server is still under construction. Stay tuned for more ' +
-            'updates on our GitHub.'
+        header: '尚未支持所选推理服务器',
+        description: '与选定推理服务器的集成仍在建设中。请继续关注GitHub上的更多更新。'
     },
     [Notification.ROBOFLOW_INFERENCE_SERVER_ERROR]: {
-        header: 'Roboflow connection failed',
-        description: 'Looks like we ware unable to connect to your Roboflow model. Please, make sure that the model ' +
-            'specification and Roboflow API key, are correct.'
+        header: 'Roboflow连接失败',
+        description: '看起来无法连接到你的Roboflow型号。请确保型号规范和Roboflow API密钥是正确的。'
     }
 }

@@ -8,47 +8,47 @@ export const ExportFormatData: ExportFormatDataMap = {
     [LabelType.RECT]: [
         {
             type: AnnotationFormatType.YOLO,
-            label: 'A .zip package containing files in YOLO format.'
+            label: 'Zip包，包含YOLO格式的文件'
         },
         {
             type: AnnotationFormatType.VOC,
-            label: 'A .zip package containing files in VOC XML format.'
+            label: 'Zip包，包含VOC XML格式的文件'
         },
         {
             type: AnnotationFormatType.CSV,
-            label: 'Single CSV file.'
+            label: '单个CSV文件'
         }
     ],
     [LabelType.POINT]: [
         {
             type: AnnotationFormatType.CSV,
-            label: 'Single CSV file.'
+            label: '单个CSV文件'
         }
     ],
     [LabelType.LINE]: [
         {
             type: AnnotationFormatType.CSV,
-            label: 'Single CSV file.'
+            label: '单个CSV文件'
         }
     ],
     [LabelType.POLYGON]: [
         {
             type: AnnotationFormatType.VGG,
-            label: 'Single file in VGG JSON format.'
+            label: 'VGG JSON格式的单个文件'
         },
         {
             type: AnnotationFormatType.COCO,
-            label: 'Single file in COCO JSON format.'
+            label: 'COCO JSON格式的单个文件'
         }
     ],
     [LabelType.IMAGE_RECOGNITION]: [
         {
             type: AnnotationFormatType.CSV,
-            label: 'Single CSV file.'
+            label: '单个CSV文件'
         },
         {
             type: AnnotationFormatType.JSON,
-            label: 'Single JSON file.'
+            label: '单个JSON文件'
         }
     ]
 }

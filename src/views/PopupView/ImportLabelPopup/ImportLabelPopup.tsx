@@ -173,7 +173,7 @@ const ImportLabelPopup: React.FC<IProps> = (
         if (!formatType && ImportFormatData[type].length !== 0) {
             return <>
                 <div className='Message'>
-                    Select file format you would like to use to import labels.
+                    选择要用于导入标签的文件格式
                 </div>,
                 <div className='Options'>
                     {getOptions(ImportFormatData[type])}

@@ -23,17 +23,17 @@ interface SelectableModel {
 const models: SelectableModel[] = [
     {
         model: AIModel.YOLO_V5_OBJECT_DETECTION,
-        name: 'YOLOv5 - object detection using rectangles',
+        name: 'YOLOv5-使用矩形进行对象检测',
         flag: false
     },
     {
         model: AIModel.SSD_OBJECT_DETECTION,
-        name: 'COCO SSD - object detection using rectangles',
+        name: 'COCO SSD-使用矩形进行对象检测',
         flag: false
     },
     {
         model: AIModel.POSE_DETECTION,
-        name: 'POSE-NET - pose estimation using points',
+        name: 'POSE-NET-使用点进行姿态估计',
         flag: false
     }
 ];
@@ -120,9 +120,7 @@ const LoadModelPopup: React.FC<IProps> = ({ updateActivePopupType }) => {
     const renderContent = () => {
         return <div className='LoadModelPopupContent'>
             <div className='Message'>
-                Speed up your annotation process using AI. Don't worry, your photos are still safe. To take care of
-                your privacy, we decided not to send your images to the server, but instead bring AI to you. Make sure
-                that you have a fast and stable connection - it may take a while to load the model.
+                使用人工智能加快你的注释过程（别担心，你的照片仍然安全）。为了保护你的隐私，我们决不将你的图像发送到服务器，而是将人工智能带给你。确保你有一个快速稳定的连接（加载模型可能需要一段时间）。
             </div>
             <div className='Companion'>
                 {modelIsLoadingStatus ?
@@ -143,10 +141,10 @@ const LoadModelPopup: React.FC<IProps> = ({ updateActivePopupType }) => {
         <GenericYesNoPopup
             title={'Say hello to AI'}
             renderContent={renderContent}
-            acceptLabel={'Use model!'}
+            acceptLabel={'使用模型'}
             onAccept={onAccept}
             disableAcceptButton={modelIsLoadingStatus || !extractSelectedModel()}
-            rejectLabel={"I'm going on my own"}
+            rejectLabel={"我自己来"}
             onReject={onReject}
             disableRejectButton={modelIsLoadingStatus}
         />

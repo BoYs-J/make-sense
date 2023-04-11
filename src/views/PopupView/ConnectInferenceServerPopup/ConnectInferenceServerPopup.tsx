@@ -121,7 +121,7 @@ const ConnectInferenceServerPopup: React.FC<IProps> = (
     const renderRoboflow = () => {
         return <>
             <div className='message'>
-                Provide details of the Roboflow model you want to run over tha API, as well as your API key.
+            提供要在API上运行的Roboflow模型的详细信息，以及你的API密钥
             </div>
             <div className='details'>
                 <StyledTextField
@@ -131,7 +131,7 @@ const ConnectInferenceServerPopup: React.FC<IProps> = (
                     autoFocus={true}
                     type={'text'}
                     margin={'dense'}
-                    label={'roboflow model'}
+                    label={'roboflow 模型'}
                     value={roboflowModel}
                     onChange={roboflowModelOnChangeCallback}
                     style={{ width: 280 }}
@@ -144,7 +144,7 @@ const ConnectInferenceServerPopup: React.FC<IProps> = (
                     autoFocus={true}
                     type={'password'}
                     margin={'dense'}
-                    label={'roboflow api key'}
+                    label={'roboflow Api密钥'}
                     value={roboflowKey}
                     onChange={roboflowKeyOnChangeCallback}
                     style={{ width: 280 }}

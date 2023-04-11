@@ -128,7 +128,7 @@ const MainView: React.FC = () => {
                     {getSocialMediaButtons({ width: 30, height: 30 })}
                 </div>
                 {!projectInProgress && <TextButton
-                    label={'Get Started'}
+                    label={'开始'}
                     onClick={startProject}
                     externalClassName={'get-started-button'}
                 />}

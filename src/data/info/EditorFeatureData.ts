@@ -6,32 +6,32 @@ export interface IEditorFeature {
 
 export const EditorFeatureData: IEditorFeature[] = [
     {
-        displayText: 'Open source and free to use under GPLv3 license',
+        displayText: '开源并在GPLv3许可证下免费使用',
         imageSrc: 'ico/open-source.png',
         imageAlt: 'open-source',
     },
     {
-        displayText: 'No advanced installation required, just open up your browser',
+        displayText: '无需高级安装，只需使用浏览器打开即可',
         imageSrc: 'ico/online.png',
         imageAlt: 'online',
     },
     {
-        displayText: "We don't store your images, because we don't send them anywhere",
+        displayText: "不会存储你的图像，因为不会将它们发送到任何地方",
         imageSrc: 'ico/private.png',
         imageAlt: 'private',
     },
     {
-        displayText: 'Support multiple label types - rects, lines, points and polygons',
+        displayText: '支持多种标签类型-矩形、直线、点和多边形',
         imageSrc: 'ico/labels.png',
         imageAlt: 'labels',
     },
     {
-        displayText: 'Support output file formats like YOLO, VOC XML, VGG JSON, CSV',
+        displayText: '支持YOLO、VOC XML、VGG JSON、CSV等输出文件格式',
         imageSrc: 'ico/file.png',
         imageAlt: 'file',
     },
     {
-        displayText: 'Use AI to make your work more productive',
+        displayText: '可使用人工智能提高工作效率',
         imageSrc: 'ico/robot.png',
         imageAlt: 'robot',
     },

@@ -124,7 +124,7 @@ const InsertLabelNamesPopup: React.FC<IProps> = (
                 autoFocus={true}
                 type={'text'}
                 margin={'dense'}
-                label={'Insert label'}
+                label={'插入标签'}
                 onKeyUp={onKeyUpCallback}
                 value={labelName.name}
                 onChange={onChangeCallback}
@@ -202,10 +202,8 @@ const InsertLabelNamesPopup: React.FC<IProps> = (
                 <div className='Message'>
                     {
                         isUpdate ?
-                            'You can now edit the label names you use to describe the objects in the photos. Use the ' +
-                            '+ button to add a new empty text field.' :
-                            'Before you start, you can create a list of labels you plan to assign to objects in your ' +
-                            'project. You can also choose to skip that part for now and define label names as you go.'
+                            '现在，你可以编辑用于描述照片中对象的标签名称。使用 + 按钮添加一个新的空文本字段。' :
+                            '在开始前，可以创建一些标签，这些标签指定给项目中的对象。你也可以选择暂时跳过该步骤，并在过程中定义标签名称。'
                     }
                 </div>
                 <div className='LabelsContainer'>
@@ -225,7 +223,7 @@ const InsertLabelNamesPopup: React.FC<IProps> = (
                                 alt={'upload'}
                                 src={'ico/type-writer.png'}
                             />
-                            <p className='extraBold'>Your label list is empty</p>
+                            <p className='extraBold'>你的标签列表为空</p>
                         </div>}
                 </div>
             </div>
@@ -234,11 +232,11 @@ const InsertLabelNamesPopup: React.FC<IProps> = (
 
     return (
         <GenericYesNoPopup
-            title={isUpdate ? 'Edit labels' : 'Create labels'}
+            title={isUpdate ? '编辑标签' : '创建标签'}
             renderContent={renderContent}
-            acceptLabel={isUpdate ? 'Accept' : 'Start project'}
+            acceptLabel={isUpdate ? '确定' : '启动项目'}
             onAccept={isUpdate ? safeOnUpdateAcceptCallback : safeOnCreateAcceptCallback}
-            rejectLabel={isUpdate ? 'Cancel' : 'Load labels from file'}
+            rejectLabel={isUpdate ? '取消' : '从文件加载标签'}
             onReject={isUpdate ? onUpdateRejectCallback : onCreateRejectCallback}
         />);
 };

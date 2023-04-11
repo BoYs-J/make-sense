@@ -11,7 +11,7 @@ export const FeatureInProgress: React.FC = () => {
                 alt={"take_off"}
                 src={"ico/take-off.png"}
             />
-            <p className="extraBold">new feature <br/> coming soon...</p>
+            <p className="extraBold">新功能<br/>即将推出...</p>
         </div>
     )
 };

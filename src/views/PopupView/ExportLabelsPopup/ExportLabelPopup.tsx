@@ -77,7 +77,7 @@ const ExportLabelPopup: React.FC<IProps> = ({ activeLabelType }) => {
     const renderInternalContent = (type: LabelType) => {
         return <>
             <div className='Message'>
-                Select label type and the file format you would like to use to export labels.
+                选择要用于导出标签的标签类型和文件格式
             </div>,
             <div className='Options'>
                 {getOptions(ExportFormatData[type])}
