@@ -83,7 +83,7 @@ const LoadLabelNamesPopup: React.FC<IProps> = (
                     alt={'upload'}
                     src={'ico/box-opened.png'}
                 />
-                <p className='extraBold'>拖拽图像到此</p>
+                <p className='extraBold'>拖拽文件到此</p>
                 <p>或者</p>
                 <p className='extraBold'>单击此处进行选择</p>
             </>;
@@ -110,7 +110,7 @@ const LoadLabelNamesPopup: React.FC<IProps> = (
     const renderContent = () => {
         return (<div className='LoadLabelsPopupContent'>
             <div className='Message'>
-                加载包含需要使用的标签列表文本文件，每个标签的名称应该用回车分隔。如果你没有准备好文件，那你现在可以创建自己的列表。
+                加载包含需要使用的标签列表文本文件（.txt或.text），每个标签的名称应该用回车分隔。如果你没有准备好文件，那你现在可以创建自己的列表。
             </div>
             <div {...getRootProps({ className: 'DropZone' })}>
                 {getDropZoneContent()}
