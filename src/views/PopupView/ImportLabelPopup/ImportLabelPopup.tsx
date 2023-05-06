@@ -193,6 +193,7 @@ const ImportLabelPopup: React.FC<IProps> = (
         point: "点",
         line: "线段",
         polygon: "多边形",
+        recognition: "分类"
     };
 
     return (

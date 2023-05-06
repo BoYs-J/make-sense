@@ -72,8 +72,8 @@ const LoadLabelNamesPopup: React.FC<IProps> = (
                     alt={'upload'}
                     src={'ico/box-opened.png'}
                 />
-                <p className='extraBold'>Loading of labels file was unsuccessful</p>
-                <p className='extraBold'>Try again</p>
+                <p className='extraBold'>加载标签文件失败</p>
+                <p className='extraBold'>再试一次</p>
             </>;
         else if (acceptedFiles.length === 0)
             return <>
@@ -83,9 +83,9 @@ const LoadLabelNamesPopup: React.FC<IProps> = (
                     alt={'upload'}
                     src={'ico/box-opened.png'}
                 />
-                <p className='extraBold'>Drop labels file</p>
-                <p>or</p>
-                <p className='extraBold'>Click here to select it</p>
+                <p className='extraBold'>拖拽图像到此</p>
+                <p>或者</p>
+                <p className='extraBold'>单击此处进行选择</p>
             </>;
         else if (labelsList.length === 1)
             return <>
@@ -94,7 +94,7 @@ const LoadLabelNamesPopup: React.FC<IProps> = (
                     alt={'uploaded'}
                     src={'ico/box-closed.png'}
                 />
-                <p className='extraBold'>only 1 label found</p>
+                <p className='extraBold'>找到1个标签</p>
             </>;
         else
             return <>
@@ -103,16 +103,14 @@ const LoadLabelNamesPopup: React.FC<IProps> = (
                     alt={'uploaded'}
                     src={'ico/box-closed.png'}
                 />
-                <p className='extraBold'>{labelsList.length} labels found</p>
+                <p className='extraBold'>找到{labelsList.length}个标签</p>
             </>;
     };
 
     const renderContent = () => {
         return (<div className='LoadLabelsPopupContent'>
             <div className='Message'>
-                Load a text file with a list of labels you are planning to use. The names of
-                each label should be separated by new line. If you don&apos;t have a prepared file, no problem. You can
-                create your own list now.
+                加载包含需要使用的标签列表文本文件，每个标签的名称应该用回车分隔。如果你没有准备好文件，那你现在可以创建自己的列表。
             </div>
             <div {...getRootProps({ className: 'DropZone' })}>
                 {getDropZoneContent()}
@@ -122,12 +120,12 @@ const LoadLabelNamesPopup: React.FC<IProps> = (
 
     return (
         <GenericYesNoPopup
-            title={'Load file with labels description'}
+            title={'加载带有标签描述的文件'}
             renderContent={renderContent}
-            acceptLabel={'Start project'}
+            acceptLabel={'启动项目'}
             onAccept={onAccept}
             disableAcceptButton={labelsList.length === 0}
-            rejectLabel={'Back'}
+            rejectLabel={'返回'}
             onReject={onReject}
         />
     );
