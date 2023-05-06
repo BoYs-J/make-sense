@@ -116,9 +116,9 @@ const ImportLabelPopup: React.FC<IProps> = (
                     alt={'upload'}
                     src={'ico/box-opened.png'}
                 />
-                <p className='extraBold'>Annotation import was unsuccessful</p>
+                <p className='extraBold'>注释导入失败</p>
                 {annotationsLoadedError.message}
-                <p className='extraBold'>Try again</p>
+                <p className='extraBold'>再试一次</p>
             </>;
         } else if (loadedImageData.length !== 0 && loadedLabelNames.length !== 0) {
             return <>
@@ -127,9 +127,8 @@ const ImportLabelPopup: React.FC<IProps> = (
                     alt={'uploaded'}
                     src={'ico/box-closed.png'}
                 />
-                <p className='extraBold'>Annotation ready for import</p>
-                After import you will lose
-                all your current annotations
+                <p className='extraBold'>已准备好导入注释</p>
+                导入后，将失去当前的所有标注
             </>;
         } else {
             return <>
